@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	</head>
+	
+	<body>
+		<p id="demo">Result</p>
+		
+		
+		<script>
+							
+
+			function reverseArray() {
+				
+				var numberArray = [4,8,56,2,8,45,57,89];
+				var len=numberArray.length;
+				for(i=1;i<=numberArray.length;i++){
+				
+					var temp=numberArray[i];
+					numberArray[i]=numberArray[len-i];
+					numberArray[len-i]=temp;
+				}
+				
+				for (j = 0; j < numberArray.length; j++)
+					document.writeln("len is "+len+"\n||"+" " + numberArray[j]);
+				
+				
+				
+			}
+			
+			reverseArray();
+			
+			
+			
+		</script>
+		
+	</body>
+</html>
